@@ -16,7 +16,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-![](Error: Only URLs with a scheme in: file, data, and node are supported by the default ESM loader. On Windows, absolute paths must be valid file:// URLs. Received protocol 'c:')
+If on windows you should see the following error:
+
+![Error: Only URLs with a scheme in: file, data, and node are supported by the default ESM loader. On Windows, absolute paths must be valid file:// URLs. Received protocol 'c:'](https://raw.githubusercontent.com/chrisweb/nextjs_mdx-js-loader_windows_reproduction/refs/heads/main/public/problem_windows_screenshot.png)
 
 ## project setup history
 
