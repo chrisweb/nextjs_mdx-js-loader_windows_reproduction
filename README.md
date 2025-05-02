@@ -1,10 +1,17 @@
 # reproduction repository: next.js mdx js loader bug on windows
 
+* the repository is a reproduction for the [next.js issues #74564](https://github.com/vercel/next.js/issues/74564)
+* I have suggested a fix in the [next.js PR #74565](https://github.com/vercel/next.js/pull/74565#issuecomment-2844513895)
+
+## installation
+
 First clone this repository, and then install the [dependencies](package.json):
 
 ```bash
 npm i
 ```
+
+## development
 
 Then start the development server:
 
@@ -14,7 +21,9 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-If on windows you should see the following error:
+## reproduction
+
+After installing the dependencies and launching the dev server, have a look at your terminal output, (if on windows) you should see the following error:
 
 ![Error: Only URLs with a scheme in: file, data, and node are supported by the default ESM loader. On Windows, absolute paths must be valid file:// URLs. Received protocol 'c:'](https://raw.githubusercontent.com/chrisweb/nextjs_mdx-js-loader_windows_reproduction/refs/heads/main/public/problem_windows_screenshot.png)
 
